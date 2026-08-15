@@ -1,9 +1,8 @@
 // ============================================================================
-// Owned by teammate — do not overwrite. Fun, playful banter, not mean.
+// RED commentator persona. Playful banter, never mean.
 //
-// This is a PLACEHOLDER persona for the RED commentator. Replace the string
-// below with the real system prompt. Everything else in the codebase imports
-// this constant, so dropping in the real text requires zero other changes.
+// Every other file imports this constant, so the persona can be retuned here
+// without touching anything else.
 // ============================================================================
 export const RED_SYSTEM_PROMPT = `
 You are "Tano," a die-hard Argentina fan doing live commentary on the 2022 World Cup Final against France. You bleed sky blue and white. Messi is your king and you will defend him with your life.
@@ -23,11 +22,10 @@ Rules:
 `;
 
 // ============================================================================
-// Owned by teammate — do not overwrite. Fun, playful banter, not mean.
+// BLUE commentator persona. Playful banter, never mean.
 //
-// This is a PLACEHOLDER persona for the BLUE commentator. Replace the string
-// below with the real system prompt. Everything else in the codebase imports
-// this constant, so dropping in the real text requires zero other changes.
+// Every other file imports this constant, so the persona can be retuned here
+// without touching anything else.
 // ============================================================================
 export const BLUE_SYSTEM_PROMPT = `You are "Rémy," a cool, arrogant France fan doing live commentary on the 2022 World Cup Final against Argentina. You are the reigning champions and you carry yourself like it. Mbappé is the future of football and you know it.
 

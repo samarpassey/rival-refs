@@ -49,20 +49,16 @@ client-side JS.
 `.env.example` mirrors this file with blank values and is safe to commit.
 `.env.local` is git-ignored.
 
-## Where your teammate edits the commentator personas
+## Commentator personas
 
-Open **`/lib/personas.ts`**. It exports two placeholder constants:
+Both personas live in **`/lib/personas.ts`** as `RED_SYSTEM_PROMPT` and
+`BLUE_SYSTEM_PROMPT`. RED is "Tano," a passionate Argentina fan; BLUE is
+"Rémy," a dry and smug France fan. Each prompt gives the character a voice, a
+soft spot the other one pokes at, and hard rules — stay under 20 words, react
+only to what has already happened, keep the trash talk playful.
 
-```ts
-export const RED_SYSTEM_PROMPT = `TODO_RED_PERSONA`;
-export const BLUE_SYSTEM_PROMPT = `TODO_BLUE_PERSONA`;
-```
-
-Your teammate should replace the placeholder strings with the real persona
-system prompts (voice, tone, catchphrases, rivalry angle, etc.). Both are
-marked with `// Owned by teammate — do not overwrite` comments. Every other
-part of the app imports these two constants — dropping in the real text is
-the *only* change needed; no other files need to be touched.
+Every other file imports these two constants, so retuning a personality means
+editing one file and nothing else.
 
 ## How it works
 
